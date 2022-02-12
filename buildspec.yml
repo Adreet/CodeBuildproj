@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  per-build:
+  pre_build:
     commands:
         # install npm
         - npm install     
