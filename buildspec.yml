@@ -3,18 +3,13 @@ version: 0.2
 phases:
   pre_build:
     commands:
-        # install npm
-        - npm install     
+      - npm install
   build:
     commands:
-        - npm run build
-  post_build:
-    commands: 
-        -npm start
-     
+      - npm run build
+
 artifacts:
   files:
-    -"**/*"
+    - '**/*'
   discard-paths: no
-  base-directory: CodeBuildproj
-  
+  base-directory: build
